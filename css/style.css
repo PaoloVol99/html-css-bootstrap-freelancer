@@ -1,0 +1,71 @@
+/* DEBUG */
+
+.debug {
+    background-color: cadetblue;
+}
+
+.debug [class^="col"] {
+    border: 1px dashed tomato;
+    text-align: center;
+}
+
+.debug .ps_header {
+    background-color: #353249;
+    padding: 12px;
+    color: white;
+}
+
+.debug .ps_hero {
+    background-color: rgb(68, 199, 160);
+    padding: 50px 0;
+}
+
+.debug .ps_portfolio {
+    background-color: white;
+    padding: 50px 0;
+}
+
+.debug .ps_about {
+    background-color: rgb(68, 199, 160);
+    padding: 50px 0;
+}
+
+.debug .ps_contact {
+    background-color: white;
+    padding: 50px 0;
+}
+
+.debug .ps_footer-info {
+    background-color: #4d486a;
+    padding: 30px;
+    color: white;
+}
+
+.debug .ps_footer-copyright {
+    background-color: #353249;
+    padding: 20px;
+    color: white;
+}
+
+
+/* MEDIA QUERIES */
+
+@media all and (min-width: 576px) {
+
+}
+
+@media all and (min-width: 768px) {
+
+}
+
+@media all and (min-width: 992px) {
+
+}
+
+@media all and (min-width: 1200px) {
+
+}
+
+@media all and (min-width: 1400px) {
+
+}
