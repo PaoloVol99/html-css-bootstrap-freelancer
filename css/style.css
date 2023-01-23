@@ -13,21 +13,21 @@ a {
     background-color: cadetblue;
 }
 
-.debug p,
+/* .debug p,
 form {
     text-align: left;
-}
+} */
 
 .debug .ps_hero img {
-    max-width: 200px;
+    max-width: 250px;
 }
 
-.debug [class^="col"] {
+/* .debug [class^="col"] {
     border: 1px dashed tomato;
     text-align: center;
-}
+} */
 
-.debug .ps_header {
+/* .debug .ps_header {
     background-color: #353249;
     padding: 12px;
     color: white;
@@ -65,7 +65,155 @@ form {
     background-color: #353249;
     padding: 20px;
     color: white;
+} */
+
+/* GENERAL RULES */
+
+.ps_star::before,
+.ps_star::after {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 4px;
+    background-color: white;
+    border-radius: 999px;
 }
+
+.ps_star-dark::before,
+.ps_star-dark::after {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 4px;
+    background-color: black;
+    border-radius: 999px;
+}
+
+.star,
+.star-dark {
+    font-size: 20px;
+}
+
+.star-dark {
+    color: #2C3E50;
+}
+
+.ps_header,
+.ps_hero,
+.ps_about,
+.ps_footer-info,
+.ps_footer-copyright {
+    color: white;
+}
+
+.ps_header,
+.ps_footer-copyright {
+    background-color: #2C3E50;
+}
+
+.ps_hero,
+.ps_about {
+    background-color: #1ABC9C;
+}
+
+.ps_footer-info {
+    background-color: #3A546D;
+}
+
+.ps_portfolio,
+.ps_contact {
+    background-color: white;
+}
+
+.ps_header {
+    padding: 28px 0;
+}
+
+.ps_hero {
+    padding: 60px 0;
+}
+
+.ps_portfolio {
+    padding: 80px 0 104px;
+}
+
+.ps_about,
+.ps_contact {
+    padding: 75px 0;
+}
+
+.ps_footer-info {
+    padding: 60px 0 50px;
+}
+
+.ps_footer-copyright {
+    padding: 40px 0;
+}
+
+.ps_button {
+    padding: 10px 16px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+p,
+form {
+    text-align: left;
+}
+
+input,
+textarea {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid lightgrey;
+}
+
+textarea {
+    height: 175px;
+}
+
+.ps_hero img {
+    max-width: 250px;
+}
+
+.ps_portfolio img {
+    border-radius: 10px;
+}
+
+.ps_footer-info i {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 55px;
+    line-height: 53px;
+}
+
+.ps_jobs {
+    font-size: 20px;
+}
+
+.ps_h1 {
+    font-size: 46px;
+}
+
+.ps_h2 {
+    font-size: 30px;
+}
+
+.ps_footer-special-text {
+    color: #1ABC9C;
+}
+
+input::placeholder {
+    color: #2C3E50;
+    opacity: 1;
+}
+
+textarea::placeholder {
+    color: #2C3E50;
+    opacity: 1;
+}
+
 
 /* MEDIA QUERIES */
 
@@ -79,6 +227,38 @@ form {
 
 @media all and (min-width: 992px) {
 
+    .ps_star::before,
+    .ps_star::after {
+        content: "";
+        display: block;
+        width: 95px;
+        height: 4px;
+        background-color: white;
+        border-radius: 999px;
+    }
+
+    .ps_star-dark::before,
+    .ps_star-dark::after {
+        content: "";
+        display: block;
+        width: 95px;
+        height: 4px;
+        background-color: black;
+        border-radius: 999px;
+    }
+
+    .ps_jobs {
+        font-size: 20px;
+    }
+    
+    .ps_h1 {
+        font-size: 60px;
+    }
+    
+    .ps_h2 {
+        font-size: 46px;
+    }
+
 }
 
 @media all and (min-width: 1200px) {
@@ -86,5 +266,25 @@ form {
 }
 
 @media all and (min-width: 1400px) {
+
+    .ps_star::before,
+    .ps_star::after {
+        content: "";
+        display: block;
+        width: 170px;
+        height: 4px;
+        background-color: white;
+        border-radius: 999px;
+    }
+
+    .ps_star-dark::before,
+    .ps_star-dark::after {
+        content: "";
+        display: block;
+        width: 170px;
+        height: 4px;
+        background-color: black;
+        border-radius: 999px;
+    }
 
 }
